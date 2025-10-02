@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background-light: #F3F4F6;
+  --color-background-dark: #111827;
+  --color-card-light: rgba(255, 255, 255, 0.2);
+  --color-card-dark: rgba(0, 0, 0, 0.2);
+  --color-text-light: #1F2937;
+  --color-text-dark: #F9FAFB;
+  --color-text-muted-light: #6B7280;
+  --color-text-muted-dark: #9CA3AF;
+  
+  --font-family-display: 'Poppins', sans-serif;
+  
+  --radius-default: 1rem;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
