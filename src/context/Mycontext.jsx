@@ -3,8 +3,17 @@ import axios from 'axios'
 
 export let MyStore = createContext();
 
-const API_KEY = "1813d552b91a4096ab954036250110";
+const API_KEY = import.meta.env.VITE_WEATHER_API_KEY || "1813d552b91a4096ab954036250110";
 const BASE_URL = "https://api.weatherapi.com/v1";
+
+// Debug environment variables
+console.log('Environment variables:', import.meta.env);
+console.log('API Key:', API_KEY);
+
+// Check if API key is available
+if (!API_KEY) {
+    console.error('Weather API key is missing. Please set VITE_REACT_APP_WEATHER_API_KEY in your environment variables.');
+}
 
 export const Mycontext = ({ children }) => {
     const [weather, setWeather] = useState(null)
@@ -15,6 +24,12 @@ export const Mycontext = ({ children }) => {
 
     // Fetch current weather data
     const fetchWeatherData = async (city = currentCity) => {
+        if (!API_KEY) {
+            setError('API key is missing. Please configure your environment variables.');
+            setLoading(false);
+            return;
+        }
+        
         setLoading(true)
         setError(null)
         try {
