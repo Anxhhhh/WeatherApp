@@ -68,8 +68,8 @@ const WeatherApp = () => {
                 <button className="text-gray-400">RU</button>
               </div>
               <button className="flex items-center space-x-2">
-                <span className="font-medium">MENU</span>
-                <span className="material-icons">menu</span>
+                <span className="font-medium hover:scale-92 hover:cursor-pointer">MENU</span>
+                <span className="material-icons hover:scale-92 hover:cursor-pointer">menu</span>
               </button>
             </div>
           </div>

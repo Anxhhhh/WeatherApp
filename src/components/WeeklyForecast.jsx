@@ -43,7 +43,7 @@ const WeeklyForecast = () => {
         <div>
           <button className="font-bold border-b-2 border-white pb-1 text-sm sm:text-base">TODAY</button>
         </div>
-        <button className="border border-white px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm font-semibold">
+        <button className="border border-white px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm font-semibold hover:scale-92 hover:cursor-pointer">
           SHOW FOR {weeklyData.length} DAYS
         </button>
       </div>
