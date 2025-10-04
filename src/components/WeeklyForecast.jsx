@@ -63,7 +63,7 @@ const WeeklyForecast = () => {
               <div>
                 <p className="font-semibold text-sm">{day.day}</p>
                 <p className="text-xs text-gray-300">{day.date}</p>
-                <p className="text-xs text-gray-400">{day.condition}</p>
+                <p className="text-xs text-gray-400 condition-text">{day.condition}</p>
               </div>
             </div>
             <div className="text-right">
@@ -87,7 +87,7 @@ const WeeklyForecast = () => {
               className="w-8 h-8 lg:w-12 lg:h-12 mx-auto mb-1 lg:mb-2" 
               src={day.icon}
             />
-            <p className="text-xs lg:text-sm">{day.condition}</p>
+            <p className="text-xs lg:text-sm condition-text">{day.condition}</p>
           </div>
         ))}
       </div>

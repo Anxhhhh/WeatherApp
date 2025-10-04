@@ -82,7 +82,7 @@ const HourlyForecast = () => {
                 <img 
                   src={hour.icon} 
                   alt={hour.condition}
-                  className="w-6 h-6 sm:w-8 sm:h-8 mx-auto"
+                  className="w-6 h-6 sm:w-8 sm:h-8 mx-auto condition-text"
                 />
               ) : (
                 <span className="material-icons text-lg sm:text-2xl">{hour.icon}</span>

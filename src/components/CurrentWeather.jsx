@@ -66,7 +66,7 @@ const CurrentWeather = () => {
         <p>Pressure: {weather.current.pressure_mb} mb</p>
         <p>UV Index: {weather.current.uv}</p>
       </div>
-      <p className="mt-4 text-sm sm:text-base">{weather.current.condition.text}. Visibility: {weather.current.vis_km} km.</p>
+      <p className="mt-4 text-sm sm:text-base condition-text">{weather.current.condition.text}. Visibility: {weather.current.vis_km} km.</p>
     </div>
   );
 };
