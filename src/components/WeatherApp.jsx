@@ -56,14 +56,6 @@ const WeatherApp = () => {
           backdropFilter: 'blur(3px)',
           background: 'rgba(0, 0, 0, 0.1)'
         }}>
-        {/* Weather Condition Indicator - Mobile Optimized */}
-        <SlideInElement direction="right" delay={800}>
-          <div className={`absolute z-20 ${isMobile ? 'top-16 right-2' : 'top-20 right-4 sm:top-16'}`}>
-            <div className={`bg-black bg-opacity-30 backdrop-blur-md rounded-full px-3 py-1.5 text-xs font-semibold capitalize ${isMobile ? 'text-xs px-2 py-1' : 'text-sm px-4 py-2'} animate-weather-pulse`}>
-              {weatherCondition} Weather
-            </div>
-          </div>
-        </SlideInElement>
 
         {/* Header */}
         <header className={`${isMobile ? 'mb-4' : 'mb-6 sm:mb-8 lg:mb-12'}`}>
